@@ -1,0 +1,42 @@
+# This configuration file should contain all required configuration parameters
+# for the Nextclade workflow to run to completion.
+#
+# Define optional config parameters with their default values here so that users
+# do not have to dig through the workflows to figure out the default values
+
+strain_id_field: "accession"
+display_strain_field: "strain"
+
+sequences_url: "https://data.nextstrain.org/files/workflows/lassa/all/sequences.fasta.zst"
+metadata_url: "https://data.nextstrain.org/files/workflows/lassa/all/metadata.tsv.zst"
+
+gpc_manual_alignment: "https://raw.githubusercontent.com/JoiRichi/LASV_ML_manuscript_data/main/alignment_preprocessing/final_passed_sequences_manual_curated.fasta"
+
+segments: ['gpc', 'l', 's']
+
+clade_membership:
+  metadata: "defaults/{segment}/metadata_clade_membership.tsv"
+  fallback: "lineage"
+
+filter:
+  gpc: '--exclude-all'
+  l: '--exclude-all'
+  s: '--exclude-all'
+
+tree:
+  method: "iqtree"
+
+refine:
+  gpc: '--root ROOT_UNCLASSIFIED'
+  l: '--root mid_point'
+  s: '--root mid_point'
+
+ancestral:
+  inference: "joint"
+
+traits:
+  columns: "clade_membership"
+
+export:
+  auspice_config: "defaults/auspice_config.json"
+  description: "../phylogenetic/defaults/description.md"
