@@ -34,7 +34,7 @@ Use this notebook to **reproduce all downstream analyses** interactively in your
 
 ## Reproducibility notes
 
-- Analyses in the companion Colab/Notebook expect inputs from this repository. Ensure the repository is available (e.g., cloned locally) before executing the notebook so that paths resolve correctly.
+- Analyses in the companion Colab/Notebook expect inputs from this repository. Ensure the repository is available (e.g., cloned locally - automatic for online colab use) before executing the notebook so that paths resolve correctly.
 - The `data/lassa-main/` directory is included as a reference copy to minimize drift; it should be treated as read‑only.
 
 ## References
