@@ -3,6 +3,12 @@
 Extra data supporting Lassa virus (LASV) analyses with Nextstrain and Nextclade.
 
 This repository hosts curated inputs and derived outputs used to reproduce the analyses referenced in the accompanying manuscript and notebook(s). It centralizes dataset snapshots, Nextclade outputs, and exported Nextstrain trees to facilitate long‑term reproducibility.
+### 🚀 Run the analysis notebook in Google Colab
+
+👉 **[Open the Colab notebook here](https://colab.research.google.com/drive/1YRkig261DmoSGYHjRTsmox6ehKbV6i3Q?usp=sharing)**
+
+Use this notebook to **reproduce all downstream analyses** interactively in your browser.
+
 
 ## Repository contents
 
